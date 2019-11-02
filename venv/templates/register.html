@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block body %}
+
+{% if registered == False %}
+<h1 class="text-center">パスワード登録画面</h1>
+
+<form method="post" action="/register">
+    {% if 'name' in results %}
+    ユーザー名<input type="text" name="user" placeholder="username"><br>
+    {% else %}
+    ユーザー名<input type="text" name="username" value="{{ results['name'] }}" placeholder="username"><br>
+    {% endif %}
+    パスワード<input type="password" name="password" placeholder="password">
+    {% if results['exits'] %}
+    <br>そのユーザー名はすでに登録しています。
+    {% endif %}
+
+    <input type="submit" value="送信" onclick="location.href='/start'">
+    <input type="reset" value="取消">
+</form>
+
+{% elif registered == True %}
+<h1>パスワードを登録しました</h1>
+
+<button type="button" class="btn btn-primary" onclick="location.href='/start'">戻る</button>
+{% endif %}
+
+{% endblock %}

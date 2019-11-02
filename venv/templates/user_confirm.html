@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block body %}
+<h1 class="text-center">パスワード認証画面</h1>
+
+{% if results['exits'] == False %}
+<p>あなたのユーザー名を入力してください</p>
+<form method="post" action="/confirmation" class="form-horizontal">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">ユーザー名</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" name="username" placeholder="username">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button class="btn btn-info" type="submit">送信</button>
+        </div>
+    </div>
+</form>
+{% if flag == 1 %}
+<p>ユーザー名が空白になっています</p>
+{% elif flag == 2 %}
+<p>
+    入力したユーザー名は存在していません<br>
+    もう一度入力してください
+</p>
+{% endif %}
+
+{% else %}
+<p>ユーザー名[{{ username }}]で実験します<br>下のボタンを押して実験を始めてください</p>
+<button type="button" class="btn btn-primary" onclick="location.href='/certification/{{ username }}'">実験開始</button>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block body %}
+
+{% if result == 'success' %}
+<!-- 認証成功の場合 -->
+<h1 class="text-center">認証成功です</h1>
+
+<button type="button" class="btn btn-primary" onclick="location.href='/'">終了</button>
+
+
+{% elif result == 'again' %}
+<!-- 再認証の場合 -->
+<h1 class="text-center">認証失敗です</h1>
+<p>
+    もう一度入力して下さい
+</p>
+
+<button type="button" class="btn btn-primary" onclick="location.href='/certification/{{ username }}'">戻る</button>
+
+
+{% elif result == 'failure' %}
+<!-- 認証失敗の場合 -->
+<h1 class="text-center">認証失敗です</h1>
+<p>
+    3回認証に失敗しました<br>
+    利用者が本人かどうかを確認するために判定を行います<br>
+    「進む」を押してください
+</p>
+<button type="button" class="btn btn-primary" onclick="location.href='/judgement/{{ username }}'">進む</button>
+
+
+{% elif result == 'judge_success' %}
+<!--本人判定成功-->
+<h1 class="text-center">本人判定成功です</h1>
+<p>
+    本人と判定することができたのでリマインドフェーズに進みます<br>
+    登録したパスワードに関するヒントが表示されるので忘れた部分を思い出しましょう<br>
+    「進む」を押してください
+</p>
+<button type="button" class="btn btn-primary" onclick="location.href='/remind/{{ username }}'">進む</button>
+
+
+{% elif result == 'judge_failure' %}
+<!--本人判定失敗-->
+<h1 class="text-center">本人判定失敗です</h1>
+<p>
+    実験に協力して頂きありがとうございました<br>
+    一回目の認証の場合→パスワードを変えてもう一度実験を行います<br>
+    一度リマインドフェーズに通り2回目以降の認証の場合→実験は終了なのでアンケートにご協力お願いします(もしリモートでやっている場合は細田に連絡をお願いします)
+</p>
+<button type="button" class="btn btn-primary" onclick="location.href='/'">終了</button>
+
+
+{% elif result == 'remind_success' %}
+<!-- リマインド成功の場合 -->
+<h1 class="text-center">リマインド成功です</h1>
+<p>
+    実験に協力して頂きありがとうございました<br>
+    あなたの登録したパスワードは<font size="5" color="red">{{ pw }}</font>です<br>
+    忘れていた部分や間違えていた部分を<font color="red">しっかりと</font>確認してください<br>
+    覚えた方は「終了」を押してください
+
+</p>
+<button type="button" class="btn btn-primary" onclick="location.href='/'">終了</button>
+
+
+{% elif result == 'remind_failure' %}
+<!-- リマインド失敗の場合 -->
+<h1 class="text-center">リマインド失敗です</h1>
+<p>
+    実験に協力して頂きありがとうございました<br>
+    あなたの登録したパスワードは<font size="5" color="red">{{ pw }}</font>です<br>
+    忘れていた部分や間違えていた部分を<font color="red">しっかりと</font>確認してください<br>
+    覚えた方は「終了」を押してください
+</p>
+<button type="button" class="btn btn-primary" onclick="location.href='/'">終了</button>
+
+
+{% elif result == 'remind_again' %}
+<!-- 再認証の場合 -->
+<h1 class="text-center">リマインド失敗です</h1>
+<p>
+    もう一度入力して下さい
+</p>
+
+<button type="button" class="btn btn-primary" onclick="location.href='/remind/{{ username }}'">戻る</button>
+
+
+{% endif %}
+
+{% endblock %}
