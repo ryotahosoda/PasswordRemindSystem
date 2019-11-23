@@ -1,7 +1,7 @@
 import csv
 import datetime as dt
 import os
-import Levenshtein as Lev
+import levenshtein as Lev
 from typing import Tuple, List
 
 dict = {'m': 'match', 'i': 'insertion', 'd': 'deletion', 'r': 'replacement'}

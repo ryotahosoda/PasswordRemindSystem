@@ -1,3 +1,6 @@
+# Python
+__pycache__
+
 # Virtualenv
 # http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
 .Python
@@ -10,3 +13,6 @@
 pyvenv.cfg
 .venv
 pip-selfcheck.json
+
+# Logs
+/venv/data/*.txt
