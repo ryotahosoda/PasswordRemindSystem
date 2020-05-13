@@ -2,7 +2,7 @@ import os
 import csv
 import system as sys
 import time
-from flask import Flask, redirect, url_for, render_template, request
+from flask import Flask, redirect, url_for, render_template, request, send_from_directory
 
 app = Flask(__name__)
 app.config.from_object(__name__)
@@ -17,6 +17,11 @@ with open('./data/userlist.csv', 'r') as f:
             pass
         else:
             counter[row[0]] = {'cert': 0, 'exp': 0, 'temppass': ''}
+
+
+# @app.route('/favicon.ico')
+# def favicon():
+#     return send_from_directory(os.path.join(app.root_path, 'static/img'), 'favicon.ico', )
 
 
 @app.route('/')
@@ -53,7 +58,7 @@ def register():
                 return render_template('register.html', results={}, registered=True)
 
 
-@app.route('/confirmation', methods=['POST', 'GET'])
+@app.route('/user-confirm', methods=['POST', 'GET'])
 def confirmation():
     if request.method == 'GET':
         return render_template('user_confirm.html', results={'exits': False})
@@ -110,7 +115,7 @@ def judgement(username):
     elif request.method == 'POST':
         r = request.form
         # 判定
-        judge = sys.judgement(username, r['password'],1)
+        judge = sys.judgement(username, r['password'], 1)
         if judge == True:
             # 認証成功
             counter[username]['cert'] = 0
@@ -139,9 +144,10 @@ def remind(username):
         hintpw = sys.hint(counter[username]['temppass'], sys.get_password(username))
         count = sys.count(hintpw)
         type = sys.hint_type(count)
-        enpw=counter[username]['temppass']
+        enpw = counter[username]['temppass']
         # type 1:挿入　2;削除　3:置換　4:挿入+置換　5:削除+置換
-        return render_template('remind.html', username=username, type=type, insert=count[1], delete=count[2], pw=''.join(hintpw), enpw=enpw)
+        return render_template('remind.html', username=username, type=type, insert=count[1], delete=count[2],
+                               pw=''.join(hintpw), enpw=enpw)
     elif request.method == 'POST':
         r = request.form
         # パスワード認証処理(ヒントありリマインド)
@@ -164,7 +170,8 @@ def remind(username):
                 # 失敗した時もカウントを0に初期化,入力パスワードも初期化
                 counter[username]['cert'] = 0
                 counter[username]['temppass'] = ''
-                return render_template('result.html', result='remind_failure', username=username, pw=sys.get_password(username))
+                return render_template('result.html', result='remind_failure', username=username,
+                                       pw=sys.get_password(username))
 
 
 if __name__ == '__main__':

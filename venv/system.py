@@ -2,6 +2,7 @@ import csv
 import datetime as dt
 import os
 import levenshtein as Lev
+import Levenshtein
 from typing import Tuple, List
 
 dict = {'m': 'match', 'i': 'insertion', 'd': 'deletion', 'r': 'replacement'}
@@ -124,7 +125,7 @@ def check_password(username, password):
 # 　類似度(標準化済)
 def resemblance(username, password):
     truepass = get_password(username)
-    l = Lev.distance(password, truepass)
+    l = Levenshtein.distance(password, truepass)
     if len(password) >= len(truepass):
         return l / len(password)
     else:

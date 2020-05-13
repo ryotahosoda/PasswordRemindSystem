@@ -1,120 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3affe69d-879c-4db5-8e5d-44be7330cf50" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="3affe69d-879c-4db5-8e5d-44be7330cf50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/venv/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/system.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/system.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/templates/certification.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/templates/certification.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/templates/judgement.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/templates/judgement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/templates/remind.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/templates/remind.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/templates/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/templates/user_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/templates/user_confirm.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1383936710">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.70" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="py" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Python" value="2" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/venv/system.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="76" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/venv/app.py" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1943" />
-    <option name="height" value="1046" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PasswordRemindSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PasswordRemindSystem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PasswordRemindSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PasswordRemindSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1bhPGaww0wZXN3ExMYOJjihZpE5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -124,11 +53,12 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\ryota\AppData\Local\Programs\Python\Python38\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -154,54 +84,78 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572664595986</updated>
+      <workItem from="1589081257757" duration="710000" />
+      <workItem from="1589084872373" duration="865000" />
+      <workItem from="1589101783179" duration="39000" />
+      <workItem from="1589201150389" duration="2236000" />
+      <workItem from="1589251412879" duration="4163000" />
+      <workItem from="1589259266076" duration="15491000" />
+      <workItem from="1589332446402" duration="12787000" />
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="697" extended-state="6" />
-    <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32920355" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="WindowStateProjectService">
+    <state x="688" y="194" key="#app" timestamp="1589081455901">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="688" y="194" key="#app/0.0.1920.1160@0.0.1920.1160" timestamp="1589081455901" />
+    <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589084951765">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1589084951765" />
+    <state x="740" y="321" key="FileChooserDialogImpl" timestamp="1589101820592">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="740" y="321" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1589101820592" />
+    <state width="1877" height="316" key="GridCell.Tab.0.bottom" timestamp="1589355896215">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1589355896215" />
+    <state width="1877" height="316" key="GridCell.Tab.0.center" timestamp="1589355896215">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1589355896215" />
+    <state width="1877" height="316" key="GridCell.Tab.0.left" timestamp="1589355896215">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1589355896215" />
+    <state width="1877" height="316" key="GridCell.Tab.0.right" timestamp="1589355896215">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1589355896215" />
+    <state width="1877" height="396" key="GridCell.Tab.1.bottom" timestamp="1589337541974">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="396" key="GridCell.Tab.1.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1589337541974" />
+    <state width="1877" height="396" key="GridCell.Tab.1.center" timestamp="1589337541974">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="396" key="GridCell.Tab.1.center/0.0.1920.1160@0.0.1920.1160" timestamp="1589337541974" />
+    <state width="1877" height="396" key="GridCell.Tab.1.left" timestamp="1589337541974">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="396" key="GridCell.Tab.1.left/0.0.1920.1160@0.0.1920.1160" timestamp="1589337541974" />
+    <state width="1877" height="396" key="GridCell.Tab.1.right" timestamp="1589337541974">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="396" key="GridCell.Tab.1.right/0.0.1920.1160@0.0.1920.1160" timestamp="1589337541974" />
+    <state x="468" y="222" key="SettingsEditor" timestamp="1589084930884">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="468" y="222" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1589084930884" />
+    <state x="656" y="404" key="com.intellij.ide.util.TipDialog" timestamp="1589332641998">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="656" y="404" key="com.intellij.ide.util.TipDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1589332641998" />
+    <state x="769" y="497" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589356151291">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="769" y="497" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1160@0.0.1920.1160" timestamp="1589356151291" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/system.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="76" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PasswordRemindSystem$app.coverage" NAME="app Coverage Results" MODIFIED="1589355896205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
   </component>
 </project>

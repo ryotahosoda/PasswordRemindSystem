@@ -1,36 +1,76 @@
 <!DOCTYPE html>
 <html lang="js">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>パスワード認証実験</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>パスワードリマインドシステム</title>
 
-	<!-- Bootstrap 4 -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='normalize.css') }}">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-	<!-- Custom Style -->
-	<link rel="stylesheet" type=text/css href="{{ url_for('static', filename='style.css') }}">
+
 </head>
 <body>
-	<header>
-		<div class="navbar navbar-dark bg-dark box-shadow">
-			<div class="container d-flex justify-content-between">
-				<a href="#" class="navbar-brand d-flex align-items-center">
-					<strong>パスワード認証実験</strong>
-				</a>
-			</div>
-		</div>
-	</header>
+<!--ヘッダー開始▼-->
+<header>
+    <div class="container">
+        <div class="header-inner">
+            <!--ヘッダーの要素-->
+            <div class="experiment-title"><h1>実験名:ヒントによる思い出しの成否</h1></div>
+        </div>
+    </div>
+</header>
+<!--ヘッダー終了▲-->
+<!--ナビゲーションバー開始▼-->
+<nav>
+    <div class="container">
+        <div class="nav-inner">
+            <ul class="navigation-bar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">実験概要</a></li>
+                <li><a href="#">実験責任者</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--ナビゲーションバー終了▲-->
+<!--セクション開始▼-->
+<section>
+    <div class="container">
+        <main>
+            <div class="main-inner">
+                {% block body %}
+                {% endblock %}
+            </div>
+        </main>
+    </div>
+</section>
+<!--セクション終了▲-->
+<!--フッター開始▼-->
+<footer>
+    <div class="container">
+        <div class="footer-inner">
+            Copyright © 2020 Kyoto Institute of Technology Information Security Lab All Rights.
+        </div>
+    </div>
+</footer>
+<!--フッター終了▲-->
+<!-- Bootstrap 4 Plugin -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
 
-	<div class="container">
-		{% block body %}
-		{% endblock %}
-	</div>
-
-	<!-- Bootstrap 4 Plugin -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

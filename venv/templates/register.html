@@ -15,14 +15,14 @@
     <br>そのユーザー名はすでに登録しています。
     {% endif %}
 
-    <input type="submit" value="送信" onclick="location.href='/start'">
+    <input type="submit" value="送信" onclick="location.href='/'">
     <input type="reset" value="取消">
 </form>
 
 {% elif registered == True %}
 <h1>パスワードを登録しました</h1>
 
-<button type="button" class="btn btn-primary" onclick="location.href='/start'">戻る</button>
+<button type="button" class="btn btn-primary" onclick="location.href='/'">戻る</button>
 {% endif %}
 
 {% endblock %}

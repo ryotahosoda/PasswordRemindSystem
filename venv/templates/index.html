@@ -1,30 +1,12 @@
 {% extends "base.html" %}
 {% block body %}
-<h1 class="text-center">実験概要</h1>
-<p>
-    実験に協力して頂きありがとうございます<br>
-    よろしくお願いします
-</p>
-<div class="purpose">
-    <h2>本実験の目的</h2>
-    <p>
-        パスワードを部分的に忘却した場合でも，本人と認証し，忘れた部分を思い出し，記憶に定着させること
-    </p>
+<h1 class="text-center">実験を始めます</h1>
+<div class="explanation">
+    以下のボタンを押してください
 </div>
-
-<!--<div class="overview">-->
-    <!--<h2>本実験について</h2>-->
-    <!--<p>-->
-        <!---->
-    <!--</p>-->
-<!--</div>-->
-
-<!--<div class="attention">-->
-    <!--<h2>実験の注意事項</h2>-->
-    <!--<p>-->
-        <!---->
-    <!--</p>-->
-<!--</div>-->
-<button type="button" class="btn btn-primary" onclick="location.href='/start'">実験開始</button>
+<div class="btn-row">
+    <button type="button" class="btn btn-primary btn-lg" onclick="location.href='/register'">登録</button>
+    <button type="button" class="btn btn-primary btn-lg" onclick="location.href='/user-confirm'">認証</button>
+</div>
 
 {% endblock %}

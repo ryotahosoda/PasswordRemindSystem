@@ -18,24 +18,48 @@
     <div class="form-group form-row">
         <div class="col-sm-offset-2 col-sm-10">
             <button class="btn btn-primary" type="submit">送信</button>
-        </div>
-        <div class="col-sm-offset-2 col-sm-10">
             <button class="btn btn-danger" type="reset">取消</button>
         </div>
+        <!--        <div class="col-sm-offset-2 col-sm-10">-->
+        <!--            -->
+        <!--        </div>-->
     </div>
 </form>
-<p>
+<div class="hint">
+    <div class="hint-box">
+        <div class="hint-center">
+            {% if type == 2 %}
+            <font color="red" size="+2">ヒント</font>
+            <div>{{ delete }}文字多いです</div>
+            {% else %}
+            <div class="hint-str"><font color="red">ヒント</font> : {{pw}}</div>
+        </div>
 
-</p>
-<div><font color="red" size="+2">ヒント</font></div>
-{% if type == 2 %}
-<p>
-    {{ delete }}文字多いです.
-</p>
-{% else %}
-<p>
-    <font size="+2">{{ pw }}</font><br>
-</p>
+    </div>
+    <div class="hint-table">
+        <table align="center">
+            <tr>
+                <td>2</td>
+                <td>p</td>
+                <td>#</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>4</td>
+                <td>a</td>
+            </tr>
+            <tr>
+                <td>!</td>
+                <td>5</td>
+                <td>X</td>
+            </tr>
+        </table>
+        <div class="table-title">
+            □の候補
+        </div>
+    </div>
+</div>
+
 
 {% endif %}
 
